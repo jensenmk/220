@@ -24,10 +24,10 @@ def main():
     rms_average = math.sqrt(rms_acc/u_i)  # rms_average = math.sqrt(rms_acc/n)
     harmonic_mean = u_i / hmc_acc  # harmonic_mean = n/hmc_acc
     geo_mean = geo_acc ** (1 / u_i)  # geo_mean = geo_acc ** (1/n)
-    print(round(rms_average, 3))
+    print(round(rms_average, 3))  # output rms, harmonic mean, and geo mean
     print(round(harmonic_mean, 3))
     print(round(geo_mean, 3))
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     main()
