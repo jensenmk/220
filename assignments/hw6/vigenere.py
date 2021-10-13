@@ -6,7 +6,7 @@ Problem: Create a vigenere cypher
 Certificate of Authenticity: I certify that this work is entirely my own
 """
 
-from graphics import *
+from graphics import GraphWin, Text, Point, Entry, Rectangle
 
 
 def code(message, key):
@@ -84,4 +84,5 @@ def main():
     win.close()
 
 
-main()
+if __name__ == '__main__':
+    main()
