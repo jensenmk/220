@@ -26,7 +26,7 @@ def weighted_average(in_file_name, out_file_name):
         grade_total = 0
 
         for i in range(len(grade_list)):
-            grade_total += round(num_grade_list[i] * weighted_weight_list[i], 2)
+            grade_total += num_grade_list[i] * weighted_weight_list[i]
             weight_total += weighted_weight_list[i] * 100
 
         if weight_total < 100:
@@ -34,7 +34,7 @@ def weighted_average(in_file_name, out_file_name):
         elif weight_total > 100:
             print(name + "'s average: Error: The weights are more than 100.", file=out_file)
         else:
-            print(name + "'s average: " + "{:.1f}".format(grade_total), file=out_file)
+            print(name + "'s average: " + "{:.1f}".format(round(grade_total, 2)), file=out_file)
 
             grade_avg_list.append(grade_total)
             total_total += grade_total
