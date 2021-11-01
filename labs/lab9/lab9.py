@@ -82,8 +82,12 @@ def circleOverlap():
     c2.draw(win)
 
     text = Text(Point(200, 300), 'the circles overlap')
+    text2 = Text(Point(200, 300), 'the circles do not overlap')
     if math.sqrt((p3.getX() - p1.getX()) ** 2 + (p3.getY() - p1.getY()) ** 2) <= r1 + r2:
         text.draw(win)
+    else:
+        text2.draw(win)
+
 
     win.getMouse()
     win.close()
@@ -97,7 +101,7 @@ def main():
     # writeSumSquares()
     # starter()
     # leapYear(2004)
-    # circleOverlap()
+    circleOverlap()
 
     pass
 
