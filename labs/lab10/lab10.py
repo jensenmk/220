@@ -50,7 +50,7 @@ def game_won(board):
 
 
 def game_over(board, turn_count):
-    if (game_won(board) == "X wins" or game_won(board) == "O wins") or (turn_count >= 9):
+    if (game_won(board) == "X wins" or game_won(board) == "O wins") or (turn_count > 9):
         return True
     else:
         return False
@@ -80,6 +80,11 @@ def play_game():
         if game_won(board) == 'O wins':
             print('O wins')
         count = count + 1
+    else:
+        print('tie')
+
+
+
 
 
 play_game()
